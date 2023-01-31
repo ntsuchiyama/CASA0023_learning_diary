@@ -4,7 +4,7 @@ project:
 
 book:
   title: "CASA0023_learning_diary"
-  author: "Jane Doe"
+  author: "Nanami Tsuchiyama"
   date: "26/01/2023"
   chapters:
     - index.qmd
