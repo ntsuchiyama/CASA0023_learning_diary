@@ -2,8 +2,17 @@
 
 ## Summary 
 
-Yokohama City, Japan, has been recognised as one o
+Yokohama City, Japan, It is part of the Tokyo-Yokohama conurbation, which has been identified as urban areas with one of the highest risks of natural disasters due to its high exposure to earthquakes and flood risks (@addreference).   
+The Disaster Risk Prevention Plan set by Yokohama has three pillars: measures against earthquakes, measure against floods and storms, and measures against urban disasters (@addreference). 
 
 ## Applications
+The main area where remote sensing could be used is to for the identification of
+It is crucial to take into consideration not only the physical features of the area, but also the socio-economic 
+One of the issues that has been identified by the 
+the identification of the 
+Remote sensing data has been used for a proxy of disaster risk in different catgeories. @Ghaffarian has identified the risk  A comprehensive measure of disaster risk Transport
+There is an issue for 
+
+identify the 
 
 ## Reflections
