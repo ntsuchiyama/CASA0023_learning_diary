@@ -1,6 +1,6 @@
 # Week 2 {.unnumbered}
 
-This [link](https://ntsuchiyama.github.io/CASA0023_xaringan) will take you to the presentation for this week's learning diary, also available down below.
+This [link](https://ntsuchiyama.github.io/CASA0023_xaringan) will take you to the presentation for this week's learning diary, also available to see down below.
 
 ```{r, echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan(
