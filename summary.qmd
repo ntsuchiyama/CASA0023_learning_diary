@@ -1,5 +1,9 @@
 # Week 2 {.unnumbered}
 
-This link will take you to the presentation for this week's learning diary. 
+This link will take you to the presentation for this week's learning diary.
 
-A
+```{r, echo = FALSE, out.width='40%'}
+xaringanExtra::embed_xaringan(
+  url = "https://ntsuchiyama.github.io/CASA0023_xaringan/",
+  ratio = "16:9")
+```
