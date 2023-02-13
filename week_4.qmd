@@ -2,17 +2,21 @@
 
 ## Summary 
 
-Yokohama City, Japan, It is part of the Tokyo-Yokohama conurbation, which has been identified as urban areas with one of the highest risks of natural disasters due to its high exposure to earthquakes and flood risks (@addreference).   
-The Disaster Risk Prevention Plan set by Yokohama has three pillars: measures against earthquakes, measure against floods and storms, and measures against urban disasters (@addreference). 
+Yokohama City, located approximately 30-40km away to the south west from the central area of Tokyo, is the capital city of Kanagawa prefecture. With a population of approximately 3.7 million. The city plays a crucial role for Japan's economy, it is the largest in Japan. 
+
+Forming the Tokyo-Yokohama conurbation, Yokohama city has been identified as urban areas with one of the highest risks of natural disasters due to its high exposure to earthquakes and flood risks (@addreference). Based on these identified risks, the Disaster Risk Prevention Plan set by Yokohama has three pillars: measures against earthquakes, measure against floods and storms, and measures against urban disasters (@addreference). 
+
+If we look into each of the documents for the identified type of disaster, we can see that much of its plan is focused on the actions to be taken for an immediate response. On the other hand, there has not been as much attention towards the rehabilitation and recovery of the city. 
+
+In addition, the recovery and rehabilitation in terms of the city as whole has only been considered in the measures against earthquakes. Much of the exisiting policy focuses in this area focuses on 
+
+In the Sendai Framework for Disaster Risk Reduction, the recovery, rehabilitation and reconstruction phase has been identified as a 'critical opportunity to build back better' (@addreference). In addition, it recognises the phase as allowing further disaster risk reduction to be incorporated in the development measures (ibid.). Therefore, it is crucial for Yokohama city to implement specific measures that allow for 
 
 ## Applications
-The main area where remote sensing could be used is to for the identification of
-It is crucial to take into consideration not only the physical features of the area, but also the socio-economic 
-One of the issues that has been identified by the 
-the identification of the 
-Remote sensing data has been used for a proxy of disaster risk in different catgeories. @Ghaffarian has identified the risk  A comprehensive measure of disaster risk Transport
-There is an issue for 
-
+Remote sensing data has been usecould be used is to for the  
+Remote sensing data has been used as a proxy of disaster risk in different catgeories. @Ghaffarian has identified the risk of 
 identify the 
+M
 
 ## Reflections
+It was interesting to find out that the theme of recovery and rehabilitation which has been realtively neglected in the disaster. According to the review of papers using remote sensing data @Ghaffarian Therefore, investing in to these plans in Yokohama city seem like an opportunity for the public sector and . 
