@@ -14,7 +14,7 @@ In the Sendai Framework for Disaster Risk Reduction, the recovery, rehabilitatio
 
 ## Applications
 Remote sensing data has been usecould be used is to for the  
-Remote sensing data has been used as a proxy of disaster risk in different catgeories. @Ghaffarian has identified the risk of 
+Remote sensing data has been used as a proxy of disaster risk in different catgeories.  has identified the risk of 
 identify the 
 M
 
