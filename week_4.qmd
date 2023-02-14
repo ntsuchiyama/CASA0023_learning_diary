@@ -2,7 +2,7 @@
 
 ## Summary 
 
-Yokohama City, located approximately 30-40km away to the south west from the central area of Tokyo, is the capital city of Kanagawa prefecture. With a population of approximately 3.7 million, it is the largest municipality in the country. Yokohama as a port city is known for its leading role in trade, commerce, shipping, shipbuilding internationally, supporting the everyday lives of the Tokyo Metropolitan region(). 
+Yokohama City, located approximately 30-40km away to the south west from the central area of Tokyo, is the capital city of Kanagawa prefecture. With a population of approximately 3.7 million, it is the largest municipality in the country. Yokohama as a port city is known for its leading role in trade, commerce, shipping, shipbuilding internationally, supporting the everyday lives of the Tokyo Metropolitan region (@the_city_of_yokohama_reasons_nodate). 
 
 Forming the Tokyo-Yokohama conurbation, Yokohama city has been identified as urban areas with one of the highest risks of natural disasters due to its high exposure to earthquakes and flood risks (). Based on these identified risks, the Disaster Risk Prevention Plan set by Yokohama has three pillars: measures against earthquakes, measure against floods and storms, and measures against urban disasters (). Here, we would like to focus on measures against earthquakes, due to its proneness to different types of earthquakes and the large scale damage expected (). 
 
@@ -20,4 +20,4 @@ Another potential area of application is looking into spatial connectivity to th
 
 
 ## Reflections 
-Researching into the application of remote sensing data in the field of disaster risk reduction was very informative in terms of what areas have been less researched, which also happen to be perhaps payed less attention in policy. The theme of recovery and rehabilitation which has been relatively neglected in the area of disaster risk reduction. According to , much of the academic literature has been focused on areas of damage and vulnerability, In addition, earth
+Researching into the application of remote sensing data in the field of disaster risk reduction was very informative in terms of what areas have been less researched, which also happen to be perhaps payed less attention in policy. According to the review by The theme of recovery has been relatively neglected in the area of disaster risk reduction n co. According to , much of the academic literature has been focused on areas of damage and vulnerability, In addition, earthquakes are a category of natural disasters where the in the past has been less 
