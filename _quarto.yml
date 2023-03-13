@@ -12,8 +12,7 @@ book:
     - week_2.qmd
     - week_4.qmd
     - references.qmd
-
-bibliography: references.bib
+  bibliography: references.bib
 
 format:
   html:
