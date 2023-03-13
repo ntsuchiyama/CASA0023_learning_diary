@@ -4,6 +4,7 @@ project:
 
 book:
   title: "CASA0023 Learning Diary"
+  bibliography: references.bib
   author: "Nanami Tsuchiyama"
   date: "26/01/2023"
   chapters:
@@ -12,7 +13,6 @@ book:
     - week_2.qmd
     - week_4.qmd
     - references.qmd
-  bibliography: references.bib
 
 format:
   html:
