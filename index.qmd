@@ -1,3 +1,9 @@
 # Introduction {.unnumbered}
 
-My name is Nanami Tsuchiyama, I'm from Tokyo, Japan.
+![](image/index_personal.jpg)
+
+Hello! My name is Nanami Tsuchiyama, I’m an MSc Urban Spatial Science student at UCL CASA. I was born and brought up in Tokyo, Japan for most of my life. This is my fifth year in London.
+
+I studied Geography and Social Data Science for my undergraduate degree at the Department of Geography at UCL, where I developed interests in urban geography and quantitative analysis. In my second year of undergraduate studies, I took the module “Understanding Cities and their Spatial Cultures”, which was run by academics at CASA. I was introduced to the different areas of research conducted at the department which I found very interesting and it motivated me to study this degree. 
+
+I decided to take this module (CASA0023) because I was interested in how remote sensing may be used to collect data on informal settlements in the Global South, where traditional forms of data is scarce. For my dissertation in my undergraduate  degree I wrote about Food Deserts in Johannesburg, South Africa, where I faced challenges collecting data around informal areas and economy. These limitations led me to literature about analysis of socio-economic conditions based on satellite images. Through this module I hope to learn how remote sensing works, and develop a better understanding of how these type of analysis is conducted.
