@@ -1,13 +1,41 @@
 # Week 8
 
-## Summary
+## This week in the lecture, we went through two mainly two topics: 
 
-This week we went through the topic of "Temperature and Policy". In the lecture
+-       Temperature and Policy
 
-The Urban Heat Island
+-       Extraction of Temperature from Satellite Data
 
-I will provide a summary of the content through a Q&A format of questions to be considered for this topic.
+In the practical, in terms of the Google Earth Engine, we went through how data from Landsat and MODIS may be used for the extraction of temperature.
 
-## Application
+To start off, I will provide a summary of the content through a Q&A format of questions to be considered for the topic of Urban Heat Island, which we covered in the lecture and is an \"an important environmental problem facing all large urban centers\".
 
-## Reflection
+What is the Urban Heat Island?
+
+-       The Urban Heat Island refers to the phenomena where an urban or metropolitan area has a significantly higher temperature compared to the surrounding rural areas due to human activities ()
+
+How does it occur?
+
+-       The following diagram demonstrates how the Urban Heat Island is caused, showing how there are many factors involved in the process of the generation of this effect. The main two sources of Urban Heat Island can be attributed to the heat generated from urban structures from their consumption and re-radiation of solar radiation (\"Urban design and structure related\" in the diagram) and anthropogenic heat from sources such as power plants, automobiles, air-conditioners \[\].
+
+What are the impacts of Urban Heat Island?
+
+-       Urban heat island can affect the environment and quality of life an area in different ways
+
+Ø  Increase in energy consumption -- overall electricity demand and peak energy demand
+
+Ø  Increase in emissions of air pollutants and greenhouse gas
+
+Ø  Heat-related deaths and illnesses especially among vulnerable groups of people ()
+
+What are there any policies addressing this issue?
+
+Remote sensing may be used to address the issue from both the problem side in terms of how the urban heat island effect intensifies with land cover change and the solution side in terms of the effectiveness of the possible policy interventions. Here I will introduce two studies, both based in Phoenix, Arizona, which each consider the urban heat island problem with the two perspectives respectively.
+
+The study by Wang et al studies how the urban heat island effect has expanded spatially across time and its relationship with land usage and land cover (LULC) in the Phoenix Metropolitan Area. For the temperature data, it uses land surface temperature data from MODIS, specifically 8-day composite June imagery due to ideal weather conditions. One limitation of the usage of MODIS is the low spatial resolution (1000m). However, it is argued that the generation for a relatively large sample size may account for this limitation. A total of 58 images are collected. For the classified LULC map, Landsat Data for 2000 (Landsat 5 Thematic Mapper Image) and 2014 (Landsat 8 Operational Land Imager) are used, based on 30m spatial resolution. The data is classified into a total of 6 classes (water, impervious surface, vegetation, urban/residential area, open soil and fallow cropland) using the Iterative Self-Organising Data Analysis unsupervised classification algorithm. The accuracy assessment is based on a minimum of 50 sample points for each class produced from a stratified random sampling approach, and is conducted using Google Earth and local observations.
+
+The study conducted by
+
+Reflection
+
+It is interesting to learn how the

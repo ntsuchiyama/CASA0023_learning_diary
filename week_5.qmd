@@ -1,1 +1,21 @@
 # Week 5
+
+This week we went through the following content in the lecture: - The set up of Google Earth Engine (GEE)
+
+-   Terms specific to GEE
+
+-   Relating spatial data formats to GEE
+
+-   Explanation of the client and server side
+
+-   Scale (resolution)
+
+-   Projections
+
+In the practical, we saw the different types of data that could be used in Google Earth Engine, and what kinds of preparation, processing, and analysis could be conducted. As a summary, here I provide a mind-map of the article by Gorelick et al \[-\]. According to Google Scholar, this article has been cited in 6963 pieces of academic work, which I think demonstrates the strong influence of GEE in the field of Remote Sensing in terms of the changing the workflow.
+
+For the application of GEE, I will introduce the review article by Liu et al \[-\], which introduces the Flood Prevention and Emergency and Response System (FPERS) in Taiwan. It is a paper that presents how the usage of Google Earth Engine may be beneficial for policies. The attached figure is a flow chart of how the FPERS supports decision making in the pre-flood, during-flood and post-flood stage.
+
+The merits of using GEE for this system maybe outlined as below: - The ability of integrating large amounts of geospatial data into one platform - The ability to prepare and update images for analysis for analysis and visualisation  Cost effective for accessing up to date data (Sentinel-2 data for every five days) However, it is quite important that they also consider the limitations in GEE for the usage of this system.
+
+The have the amount of attention given to Google Earth Engine and its applications in different areas has been interesting. In terms of the technicality, I think the computational easiness which has been addressed throughout the lecture and in the works of Gorelick et al. \[\] of Google Earth Engine is a great advantage, after using RStudio for some of the analysis in previous weeks. However, obviously GEE is not perfect for every single application, so I think it is important to develop an understanding what can be done well and what cannot. Moreover, in terms of accessibility, the paper on FPERS was informing about how it is not perhaps being accessible for everyone as I thought.
