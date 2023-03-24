@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -105,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week_2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 2</span></a>
+  <a href="./week_2.html" class="sidebar-item-text sidebar-link">Week 2</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -125,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week_6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 6</span></a>
+  <a href="./week_6.html" class="sidebar-item-text sidebar-link">Week 6</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -152,7 +171,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a>
+  <ul class="collapse">
+  <li><a href="#sample-of-practical-output" id="toc-sample-of-practical-output" class="nav-link" data-scroll-target="#sample-of-practical-output">Sample of Practical Output</a></li>
+  </ul></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   </ul>
@@ -180,19 +202,122 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>The American Society for Photogrametry and Remote Sensing (ASPRS) has defined remote sensing as “the measurement or acquisition of information of some property of an object or phenomenon, by a recording device that is not in physical or intimate contact with the object or phenomenon under study” (Colwell, 1983) . To understand how remote sensing works, it is crucial for one to learn about electromagnetic radiation. Electromagnetic radiation is a kind of kinetic energy that is produced with the movement of electrically charged particles through space. Electromagnetic radiation consists of two components, an electric field and magnetic field, and it moves back and forth in and changes between the fields in a wave-like fashion.</p>
-<p>The waves have differing three main different properties of waves - Wavelength: “the distance energy travels from a moment of maximum electrical energy until reaching the maximum again” - Amplitude: “the peak value of the wave” - Frequency: “the number of cycles of the wave that occur in one second” The product of the wavelength and frequency is constant, equalling to the speed of light. Electromagnetic spectrum refers to the range of wavelength and frequencies that produces different colours of visible light and non-visible light.</p>
+<p>For the first week we covered the following topics in the introductory lecture and practical:</p>
+<ul>
+<li>Types of Sensors
+<ul>
+<li>active</li>
+<li>passive</li>
+</ul></li>
+<li>Electromagnetic Waves
+<ul>
+<li>Interaction with the Earth’s surface</li>
+<li>Interaction with the atmosphere</li>
+</ul></li>
+<li>Different dimensions of resolution
+<ul>
+<li>Spatial Resolution</li>
+<li>Spectral Resolution</li>
+<li>Radiometric Resolution</li>
+<li>Temporal Resolution</li>
+</ul></li>
+</ul>
+<p>Below I try to provide a comprehensive summary of the content we covered, based on works of Brady <span class="citation" data-cites="brady2021">(<a href="references.html#ref-brady2021" role="doc-biblioref">2021</a>)</span>, Jensen <span class="citation" data-cites="jensen_introductory_1996">(<a href="references.html#ref-jensen_introductory_1996" role="doc-biblioref">1996</a>)</span>, and Tempfli <em>et al.</em> <span class="citation" data-cites="tempfli2009">(<a href="references.html#ref-tempfli2009" role="doc-biblioref">2009</a>)</span>.</p>
+<p>The American Society for Photogrametry and Remote Sensing (ASPRS) has defined remote sensing as “the measurement or acquisition of information of some property of an object or phenomenon, by a recording device that is not in physical or intimate contact with the object or phenomenon under study” <span class="citation" data-cites="colwell1983">(<a href="references.html#ref-colwell1983" role="doc-biblioref">Colwell 1983</a>)</span>. To understand how remote sensing works, it is crucial for one to learn about electromagnetic radiation. Electromagnetic radiation is a kind of kinetic energy that is produced with the movement of electrically charged particles through space. Electromagnetic radiation consists of two components, an electric field and magnetic field, and it moves back and forth in and changes between the fields in a wave-like fashion.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image/wk1_emradiation.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Electromagnetic Radiation <span class="citation" data-cites="tempfli2009">(<a href="references.html#ref-tempfli2009" role="doc-biblioref">Tempfli et al. 2009, 57</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<p>The waves have differing three main different properties of waves</p>
+<ul>
+<li><p>Wavelength: “the distance energy travels from a moment of maximum electrical energy until reaching the maximum again”</p></li>
+<li><p>Amplitude: “the peak value of the wave”</p></li>
+<li><p>Frequency: “the number of cycles of the wave that occur in one second”</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image/wk1_wave.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Characteristics of the wave <span class="citation" data-cites="tempfli2009">(<a href="references.html#ref-tempfli2009" role="doc-biblioref">Tempfli et al. 2009, 58</a>)</span> - lambda = wavelength, alpha = amplitude</figcaption><p></p>
+</figure>
+</div>
+<p>The product of the wavelength and frequency is constant, equalling to the speed of light. Electromagnetic spectrum refers to the range of wavelength and frequencies that produces different colours of visible light and non-visible light.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image/wk1_electromagnetic_radiation.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Electromagnetic Spectrum <span class="citation" data-cites="brady2021">(<a href="references.html#ref-brady2021" role="doc-biblioref">Brady 2021</a>)</span></figcaption><p></p>
+</figure>
+</div>
 <p>In remote sensing, data may be collected with passive sensors that collect the electromagnetic radiation sourced from the Sun or other objects on the Earth and then reflected or emitted. It could also be collected using active sensors, such as RADAR and LiDAR, which produce the electromagnetic radiation and detects the reflection. There are a number of dimensions of the data to be considered in this collection process. One of these dimensions is regarding the spectral information and resolution. It is common for sources of remote sensing data to produce multi-band images, which means that the images are composed of multiple bands each comprised of a range of wavelengths on the electromagnetic spectrum. The relationship between the amount of electromagnetic radiation reflected in each of the bands and the biological, chemical, and physical attributes are often modelled. Bands are selected based on their appropriateness for the getting information about these attributes, regarding the maximisation of the background and variable of interest. Other dimensions to be considered are spatial resolution and the temporal resolution. The subject areas where remote sensing data is applied may differ depending on the combination of the values.</p>
+<section id="sample-of-practical-output" class="level3">
+<h3 class="anchored" data-anchor-id="sample-of-practical-output">Sample of Practical Output</h3>
+<p>Sentinel Data Area of Interest: Yokohama, Kanagawa Japan</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image/wk1_yokohama.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">RGB Image</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image/wk1_scatterplot.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Scatterplot of band 4 and band 8</figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li>Band 4: red (vegetation absorbs)</li>
+<li>Band 8: Near-infrared (NIR, that vegetation strongly reflects)
+<ul>
+<li>high values of NIR and low values of red → dense vegetation</li>
+<li>low values of both red and NIR → wet bare soil.</li>
+</ul></li>
+</ul>
+</section>
 </section>
 <section id="application" class="level2">
 <h2 class="anchored" data-anchor-id="application">Application</h2>
-<p>Here I will introduce two studies that I have found. The first study by Oon et al.&nbsp;(2019) is about the classification of given the issue of the conversion of tropical swamp forests into oil palm agriculture land, and how remote sensing data may be use for the identification of these areas, including whether they are large scale plantations operated by commercial firms, or smaller farms run by individual farmers. The region of interest is the state of Selangor on the west coast of Peninsular Malaysia, and level 2 imagery from Landsat-8 for the four dates of 24 March 2014, 30 March 2015, 29 March 2016 and 17 April 2017 was tests. It calculates three types of vegetation indices: the normalized difference vegetation index (NDVI), enhanced vegetation index (EVI) and soil adjusted vegetation index (SAVI). NDVI and SAVI is calculated with bands 4 (red band) and 5 (near-infrared (NIR) band), and EVI is calculated with bands 3 (blue band), 4 and 5. These indices are used to classify land usage for three categories with different methods: the supervised maximum likelihood (ML), random tree (RT) and support vector machine (SVM) classifier. The second study by Yang and Du (2017) is regarding the extraction of water bodies for the monitoring of water resources by devising an enhanced water index. The development of EHI is based on three measures. This includes the first two components of principle components analysis conducted on the six multispectral bands in 30m pixel size from the Landsat 5 Thematic Mapper imagery for 23 September 2011. The third measure is the modified Normalized difference water index (NDWI) which is calculated with TM Band 2 which corresponds to the green band, and TM Band 5 which corresponds to the mid-infrared band (MIR). The accuracy of EHI is tested in comparison to other indices, with the results demonstrating the appropriateness of EHI for extracting water bodies in areas of mixed land usage. The two studies demonstrate how studies do not only consider the direct usage of the remote sensing data from different bands at various combinations of spatial and temporal resolutions but how the different bands are combined together for the calculation of indices to develop or classification for an enhanced understanding.</p>
+<p>Here I will introduce two studies that I have found about the usage of different bands. The first study by Oon <em>et al.</em> <span class="citation" data-cites="oon2019">(<a href="references.html#ref-oon2019" role="doc-biblioref">2019</a>)</span> is about the classification of given the issue of the conversion of tropical swamp forests into oil palm agriculture land, and how remote sensing data may be use for the identification of these areas, including whether they are large scale plantations operated by commercial firms, or smaller farms run by individual farmers. The region of interest is the state of Selangor on the west coast of Peninsular Malaysia, and level 2 imagery from Landsat-8 for the four dates of 24 March 2014, 30 March 2015, 29 March 2016 and 17 April 2017 was tests. It calculates three types of vegetation indices: the normalized difference vegetation index (NDVI), enhanced vegetation index (EVI) and soil adjusted vegetation index (SAVI). NDVI and SAVI is calculated with bands 4 (red band) and 5 (near-infrared (NIR) band), and EVI is calculated with bands 3 (blue band), 4 and 5. These indices are used to classify land usage for three categories with different methods: the supervised maximum likelihood (ML), random tree (RT) and support vector machine (SVM) classifier.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image/wk1_palm.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Classified Maps of Multi-temporal Datasets with Different Band Combinations <span class="citation" data-cites="oon2019">(<a href="references.html#ref-oon2019" role="doc-biblioref">Oon et al. 2019</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<p>The second study by Yang and Du <span class="citation" data-cites="yang2017">(<a href="references.html#ref-yang2017" role="doc-biblioref">2017</a>)</span> is regarding the extraction of water bodies for the monitoring of water resources by devising an enhanced water index. The development of EHI is based on three measures. This includes the first two components of principle components analysis conducted on the six multispectral bands in 30m pixel size from the Landsat 5 Thematic Mapper imagery for 23 September 2011. The third measure is the modified Normalized difference water index (NDWI) which is calculated with TM Band 2 which corresponds to the green band, and TM Band 5 which corresponds to the mid-infrared band (MIR). The accuracy of EHI is tested in comparison to other indices, with the results demonstrating the appropriateness of EHI for extracting water bodies in areas of mixed land usage.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image/wk1_water_indices.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Index Images of the Study Area <span class="citation" data-cites="yang2017">(<a href="references.html#ref-yang2017" role="doc-biblioref">Yang and Du 2017</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<p>The two studies demonstrate how studies do not only consider the direct usage of the remote sensing data from different bands at various combinations of spatial and temporal resolutions but how the different bands are combined together for the calculation of indices to develop or classification for an enhanced understanding.</p>
 </section>
 <section id="reflection" class="level2">
 <h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
-<p>It was interesting how the values of different bands are combined develop different types of indices and how these are developed on the base of the top.</p>
+<p>It was interesting how the values of different bands are combined to develop different types of indices and how these are developed on the base on the raw data that has been collected by the sensors. Moreover, these indices are not just done with their calculation, but seem to used for further analysis of the data. The range of things we can do with remote sensing data is much wider than I have expected. The usage of the SNAP application and raster data in Rstudio is something I am not familiar with and would like to learn more about. However, in the lecture it was mentioned that there are limitations in conducting analysis with R, so I look forward to learn about new platforms as well.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-brady2021" class="csl-entry" role="doc-biblioentry">
+Brady, Maria. 2021. <span>“Remote Sensing for Dummies.”</span> <a href="https://storymaps.arcgis.com/stories/cb1577b0f5bc485c974b4ea19d52282d">https://storymaps.arcgis.com/stories/cb1577b0f5bc485c974b4ea19d52282d</a>.
+</div>
+<div id="ref-colwell1983" class="csl-entry" role="doc-biblioentry">
+Colwell, Robert N. 1983. <span>“Manual of Remote Sensing.”</span>
+</div>
+<div id="ref-jensen_introductory_1996" class="csl-entry" role="doc-biblioentry">
+Jensen, John R et al. 1996. <em>Introductory Digital Image Processing: A Remote Sensing Perspective.</em> Ed. 2. Prentice-Hall Inc.
+</div>
+<div id="ref-oon2019" class="csl-entry" role="doc-biblioentry">
+Oon, Aslinda, Helmi Zulhaidi Mohd Shafri, Alex Mark Lechner, and Badrul Azhar. 2019. <span>“Discriminating Between Large-Scale Oil Palm Plantations and Smallholdings on Tropical Peatlands Using Vegetation Indices and Supervised Classification of LANDSAT-8.”</span> <em>International Journal of Remote Sensing</em> 40 (19): 73127328.
+</div>
+<div id="ref-tempfli2009" class="csl-entry" role="doc-biblioentry">
+Tempfli, Klaus, GCe Huurneman, WHe Bakker, Lucas LF Janssen, WF Feringa, ASM Gieske, KA Grabmaier, et al. 2009. <em>Principles of Remote Sensing: An Introductory Textbook</em>. International Institute for Geo-Information Science; Earth Observation.
+</div>
+<div id="ref-yang2017" class="csl-entry" role="doc-biblioentry">
+Yang, Jason, and Xianrong Du. 2017. <span>“An Enhanced Water Index in Extracting Water Bodies from Landsat TM Imagery.”</span> <em>Annals of GIS</em> 23 (3): 141148.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -337,7 +462,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week_2.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 2</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Week 2</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
