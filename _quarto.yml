@@ -16,6 +16,7 @@ book:
     - week_6.qmd
     - week_7.qmd
     - week_8.qmd
+    - references.qmd
 bibliography: references.bib
 
 format:

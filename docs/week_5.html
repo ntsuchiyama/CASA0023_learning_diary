@@ -157,6 +157,11 @@ div.csl-indent {
   <a href="./week_8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 8</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">References</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -166,7 +171,9 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#references" id="toc-references" class="nav-link active" data-scroll-target="#references">References</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
+  <li><a href="#summary-1" id="toc-summary-1" class="nav-link" data-scroll-target="#summary-1">Summary</a></li>
   </ul>
 </nav>
     </div>
@@ -190,6 +197,8 @@ div.csl-indent {
 
 </header>
 
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <p>This week we went through the following content in the lecture:</p>
 <ul>
 <li><p>The set up of Google Earth Engine (GEE)</p>
@@ -202,9 +211,24 @@ div.csl-indent {
 </ul></li>
 </ul>
 <p>In the practical, we saw the different types of data that could be used in Google Earth Engine, and what kinds of preparation, processing, and analysis could be conducted.</p>
-<p>As a summary, here I provide a mind-map of the article by Gorelick <em>et al</em>. <span class="citation" data-cites="gorelick_google_2017">(<a href="week_4.html#ref-gorelick_google_2017" role="doc-biblioref">2017</a>)</span>. According to Google Scholar, this article has been cited in 6963 pieces of academic work, which I think demonstrates the strong influence of GEE in the field of Remote Sensing in terms of the changing the workflow.</p>
-<p>For the application of GEE, I will introduce the review article by Liu <em>et al</em>. <span class="citation" data-cites="liu_flood_2018">(<a href="week_4.html#ref-liu_flood_2018" role="doc-biblioref">2018</a>)</span>, which introduces the Flood Prevention and Emergency and Response System (FPERS) in Taiwan. It is a paper that presents how the usage of Google Earth Engine may be beneficial for policies. The attached figure is a flow chart of how the FPERS supports decision making in the pre-flood, during-flood and post-flood stage.</p>
-<p>The merits of using GEE for this FPERS maybe outlined as below <span class="citation" data-cites="liu_flood_2018">(<a href="week_4.html#ref-liu_flood_2018" role="doc-biblioref">Liu et al. 2018</a>)</span>:</p>
+<p>As a summary, here I provide a mind-map of the article by Gorelick <em>et al</em>. <span class="citation" data-cites="gorelick_google_2017">(<a href="references.html#ref-gorelick_google_2017" role="doc-biblioref">2017</a>)</span>. According to Google Scholar, this article has been cited in 6963 pieces of academic work, which I think demonstrates the strong influence of GEE in the field of Remote Sensing in terms of the changing the workflow.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image/wk5_gee.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Mind Map - Google Earth Engine</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="application" class="level2">
+<h2 class="anchored" data-anchor-id="application">Application</h2>
+<p>For the application of GEE, I will introduce the review article by Liu <em>et al</em>. <span class="citation" data-cites="liu_flood_2018">(<a href="references.html#ref-liu_flood_2018" role="doc-biblioref">2018</a>)</span>, which introduces the Flood Prevention and Emergency and Response System (FPERS) in Taiwan. It is a paper that presents how the usage of Google Earth Engine may be beneficial for policies. The attached figure is a flow chart of how the FPERS supports decision making in the pre-flood, during-flood and post-flood stage.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image/wk5_fpers.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Flowchart - FPERS</figcaption><p></p>
+</figure>
+</div>
+<p>The merits of using GEE for this FPERS maybe outlined as below <span class="citation" data-cites="liu_flood_2018">(<a href="references.html#ref-liu_flood_2018" role="doc-biblioref">Liu et al. 2018</a>)</span>:</p>
 <ul>
 <li><p>The ability to prepare and update images for analysis for analysis and visualisation</p>
 <ul>
@@ -212,10 +236,13 @@ div.csl-indent {
 </ul></li>
 <li><p>Incorporation of the global topological data, allowing for 3D display of the data</p></li>
 </ul>
-<p>However, it is quite important that they also consider the limitations in GEE for the usage of this system. Liu <em>et al</em>. <span class="citation" data-cites="liu_flood_2018">(<a href="week_4.html#ref-liu_flood_2018" role="doc-biblioref">2018</a>)</span> state that the GEE lacks the flexibility for managing and searching an expansive database with its increasing number of data, requiring the knowledge of the data the user wants to use and selecting the data based on conditions. Moreover, due to the depreciation of Google Earth API, the services were downgraded to Google Maps API, only allowing for 2D Display. This highlights the challenges which may arise when relying on a single commercial platform.</p>
-<p>The have the amount of attention given to Google Earth Engine and its applications in different areas has been interesting. In terms of the technicality, I think the computational easiness which has been addressed throughout the lecture and in the works of Gorelick of Google Earth Engine is a great advantage, after using RStudio for some of the analysis in previous weeks. The range of things that is made possible with GEE in FPERS is quite astonishing. However, obviously GEE is not perfect for every single application, so I think it is important to develop an understanding what can be done well and what cannot. Moreover, in terms of accessibility, the paper on FPERS by Liu <em>et al.</em> was informing about the limitations of GEE and how it is not perhaps being accessible for everyone as I thought and how it promotes it is. The point regarding the reliance on a single platform was quite interesting, and I would like to perhaps explore alternative platforms for analysis in the future.</p>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>However, it is quite important that they also consider the limitations in GEE for the usage of this system. Liu <em>et al</em>. <span class="citation" data-cites="liu_flood_2018">(<a href="references.html#ref-liu_flood_2018" role="doc-biblioref">2018</a>)</span> state that the GEE lacks the flexibility for managing and searching an expansive database with its increasing number of data, requiring the knowledge of the data the user wants to use and selecting the data based on conditions. Moreover, due to the depreciation of Google Earth API, the services were downgraded to Google Maps API, only allowing for 2D Display. This highlights the challenges which may arise when relying on a single commercial platform.</p>
+</section>
+<section id="summary-1" class="level2">
+<h2 class="anchored" data-anchor-id="summary-1">Summary</h2>
+<p>The amount of attention given to Google Earth Engine and its applications in different areas has been interesting. In terms of the technicality, I think the computational easiness which has been addressed throughout the lecture and in the works of Gorelick <em>et al.</em> <span class="citation" data-cites="gorelick_google_2017">(<a href="references.html#ref-gorelick_google_2017" role="doc-biblioref">2017</a>)</span> of Google Earth Engine is a great advantage, after using RStudio for some of the analysis in previous weeks. The range of things that is made possible with GEE in FPERS is quite astonishing. However, obviously GEE is not perfect for every single application, so I think it is important to develop an understanding what can be done well and what cannot. Moreover, in terms of accessibility, the paper on FPERS by Liu <em>et al.</em> <span class="citation" data-cites="liu_flood_2018">(<a href="references.html#ref-liu_flood_2018" role="doc-biblioref">2018</a>)</span> was informing about the limitations of GEE and how it is not perhaps being accessible for everyone as I thought and how it promotes it is. The point regarding the reliance on a single platform was quite interesting, and I would like to perhaps explore alternative platforms for analysis in the future.</p>
+
+
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
 <div id="ref-gorelick_google_2017" class="csl-entry" role="doc-biblioentry">
 Gorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca Moore. 2017. <span>“Google <span>Earth</span> <span>Engine</span>: <span>Planetary</span>-Scale Geospatial Analysis for Everyone.”</span> <em>Remote Sensing of Environment</em> 202: 18–27.
@@ -224,8 +251,6 @@ Gorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Re
 Liu, Cheng-Chien, Ming-Chang Shieh, Ming-Syun Ke, and Kung-Hwa Wang. 2018. <span>“Flood Prevention and Emergency Response System Powered by <span>Google</span> <span>Earth</span> <span>Engine</span>.”</span> <em>Remote Sensing</em> 10 (8): 1283.
 </div>
 </div>
-
-
 </section>
 
 </main> <!-- /main -->
