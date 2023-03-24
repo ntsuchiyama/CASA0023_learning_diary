@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA0023 Learning Diary - 4&nbsp; Week 8</title>
+<title>CASA0023 Learning Diary - 4&nbsp; Week 6</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,25 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
 }
 </style>
 
@@ -70,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 8</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 6</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -125,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week_6.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 8</span></a>
+  <a href="./week_6.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 6</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -152,10 +171,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">4.1</span>  Summary</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">4.1</span>  Summary</a>
+  <ul class="collapse">
+  <li><a href="#practical-output" id="toc-practical-output" class="nav-link" data-scroll-target="#practical-output"><span class="toc-section-number">4.1.1</span>  Practical Output</a></li>
+  </ul></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">4.2</span>  Application</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">4.3</span>  Reflection</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="toc-section-number">4.4</span>  </a></li>
   </ul>
 </nav>
     </div>
@@ -164,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 8</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 6</span></h1>
 </div>
 
 
@@ -181,17 +202,148 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.1</span> Summary</h2>
+<p>This week we went through the following topics in the lecture and in the practical:</p>
+<ul>
+<li><p>The usage of classified data in studies</p>
+<ul>
+<li>Urban expansion, air pollution and LULC, urban green spaces, monitoring forests and illegal logging, forest fires</li>
+</ul></li>
+<li><p>How to conduct classification of remotely sensed data</p>
+<ul>
+<li><p>Classification and Regression Tree (CART) classifier and issues regarding overfitting</p></li>
+<li><p>Random Forest classifier</p></li>
+<li><p>Unsupervised methods</p>
+<ul>
+<li>DBSCAN, ISODATA</li>
+</ul></li>
+<li><p>Supervised methods</p>
+<ul>
+<li>Maximum likelihood, Support Vector Machine (SVM)</li>
+</ul></li>
+<li><p>Considerations to be given</p></li>
+</ul></li>
+</ul>
+<p>For the summary I will provide a description of the Random Forest classifier and the CART classifier which Random Forest is built on, which is one of machine learning methods we went through which are commonly used for classification and considered in the practical. In order to understand the RF Classifier, it is crucial to understand how the CART Classifier works.</p>
+<ul>
+<li><p>CART</p>
+<ul>
+<li><p>Type of Decision tree which may be used for classification which involves classifying into discrete categories or for regression which involves the prediction of continuous variables</p></li>
+<li><p>May calculate the Gini Impurity for the quantification of the impurity considering the weights (mixture of categories)</p></li>
+</ul></li>
+<li><p>Regression tree</p>
+<ul>
+<li><p>Calculation of sum of squares regression (SSR) for different thresholds – begin with the one with lowest SSR, repeat the process</p></li>
+<li><p>A good model – balancing bias (high = oversimplification of the model) and variance (high = not generalisable on unseen data) – trade-off relationship</p></li>
+<li><p>How to avoid overfitting</p>
+<ul>
+<li><p>Putting a limit on how trees can go – e.g.&nbsp;setting a threshold for minimum number of observations in each slit to prevent overfitting</p></li>
+<li><p>Weakest link pruning <span class="citation" data-cites="mangale2020">(<a href="references.html#ref-mangale2020" role="doc-biblioref">Mangale 2020</a>)</span></p>
+<ul>
+<li><p>Starts with original full size tree – calculate the SSR at each leaf and add all together four the total SSR for the whole tree</p></li>
+<li><p>Calculate the total SSR for each sub tree (remove a leaf one by one) – should get larger with fewer leaves</p></li>
+<li><p>Calculation of tree score = SSR + alpha * T</p></li>
+<li><p>alpha – tuning parameter</p>
+<ul>
+<li><p>start with alpha = 0 – full tree will have lowest tree score</p></li>
+<li><p>Increase until removing a leaf will give a lower tree score and repeat until there is only one leaf left</p></li>
+<li><p>Go back to the full dataset and conduct train-test split</p></li>
+<li><p>Use each of the alpha values for the training data for making a new tree and sub-trees that minimises the tree score</p></li>
+<li><p>Calculate the SSR for new each tree with the testing data – which tree has the smallest??</p></li>
+<li><p>Conduct train and test split again – 10 times cross validation</p></li>
+<li><p>Choose alpha value which gives the lowest SSR with testing data</p></li>
+</ul></li>
+<li><p>T – tree complexity obesity (number of leaves in tree or subtree)</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Random Forest Classification <span class="citation" data-cites="breiman_random_2001">(<a href="references.html#ref-breiman_random_2001" role="doc-biblioref">Breiman 2001</a>)</span>, <span class="citation" data-cites="belgiu_random_2016">Belgiu and Drăguţ (<a href="references.html#ref-belgiu_random_2016" role="doc-biblioref">2016</a>)</span>]</p>
+<ul>
+<li><p>Involves many classification decision trees for making a prediction</p></li>
+<li><p>created by selecting a subset of training samples through replacement (bagging approach); the same sample may be selected multiple times</p></li>
+<li><p>Approximately two-thirds of samples used for training (in-bag samples), the remaining one-third used for testing (out-of-the bag samples)</p></li>
+<li><p>Error estimate: out-of-bag (OOB) error – number of correct predicted/total</p></li>
+<li><p>Need to set two parameters – the number of decision trees &amp; the number of variables for septic on and testing for the best split when growing the trees</p></li>
+<li><p>Important to analyse the sensitivity to the sampling design</p></li>
+<li><p>Usage of filter methods for feature selection based on importance</p></li>
+</ul></li>
+<li><p>Comparison of Random Forest to other machine learning methods <span class="citation" data-cites="belgiu_random_2016">(<a href="references.html#ref-belgiu_random_2016" role="doc-biblioref">Belgiu and Drăguţ 2016</a>)</span>, <span class="citation" data-cites="chutia_hyperspectral_2016">Chutia et al. (<a href="references.html#ref-chutia_hyperspectral_2016" role="doc-biblioref">2016</a>)</span>]</p>
+<ul>
+<li><p>Strengths</p>
+<ul>
+<li><p>Implementation is simple requiring only the adjustment of the two parameters stated above</p></li>
+<li><p>No need to conduct cross validation or acquire a separate test set to retrieve an unbiased estimate of test set error</p></li>
+<li><p>Reduces overfitting</p></li>
+</ul></li>
+<li><p>Limitations</p>
+<ul>
+<li>The performance may be highly influenced by the correlation between any given trees and the strength of each tree in the forest</li>
+</ul></li>
+<li><p>Suitable for highly dimensional input data such as hyperspectral imagery or multi source data compared to SVM</p></li>
+<li><p>Worse performance for object based image analysis compared to SVM</p></li>
+</ul></li>
+</ul>
+<section id="practical-output" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="practical-output"><span class="header-section-number">4.1.1</span> Practical Output</h3>
+<p>Random Forest Classification of Hirakata, Osaka, Japan</p>
+</section>
 </section>
 <section id="application" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="application"><span class="header-section-number">4.2</span> Application</h2>
+<p>The case study I will like to consider here as an example of research using random forest classifier of remotely sensed data is the study by Gibson <em>et al.</em> <span class="citation" data-cites="gibson2020">(<a href="references.html#ref-gibson2020" role="doc-biblioref">2020</a>)</span>. The article is about fire severity which measure the loss of organic matter due to the fire <span class="citation" data-cites="keeley2009">(<a href="references.html#ref-keeley2009" role="doc-biblioref">Keeley 2009, 118</a>)</span>. It is important to understand the spatial patterns of fire severity for fire management and ecological and climate change research related to fires. The objectives of the paper are stated as 1) the assessment of how useful high resolution Sentinel imagery is for mapping fire severity, 2) the evaluation of the classification for fire severity based on traditional spectral indices and fractional cover products, and 3) the identification of landscape factors that are related to misclassification (ibid.)</p>
+<p>The region of interest is New South Wales, and the focus is on eight wildfires (between 2017 and 2018, ranging from one day to two weeks) within the area. These sites were selected because there were high spatial resolution (less than 50cm) digital aerial photography with four bands (blue, green, red and NIR) for the post-fire period of them that overlapped with Sentinel 2 satellite imagery. These images went through aerial photograph interpretation for the generation of homogenous sample area polygons and classified based on five severity classes which have been used for the evaluation of the different degrees of post-fire change. Random sampling points are based on these polygons, being randomly distributed and reflecting the real-world situation. For the remotely sensed data, Sentinel 2 satellite imagery with cloud cover less than 5% and with dates near to the period when each of the fires occurred were chosen. Based on the calculation of the proportion of photosynthetic vegetation, non-photosynthetic vegetation, and bare ground cover using a fractional cover model (originally developed for Landsat imagery so need to apply surface reflectance adjustment beforehand) for each pixel, fractional cover products for each image are yielded. In addition, five candidate fire severity indices are calculated for each pre-and post- image pair (The formulas for acquiring these indices may referred to in the paper):</p>
+<ul>
+<li><p>differenced normalised burn ratio (dNBR)</p></li>
+<li><p>relativised dNBR (RdNBR)</p></li>
+<li><p>relativised change in total fractional cover (RdFCT)</p></li>
+<li><p>change in bare fractional cover (dFCB)</p></li>
+<li><p>the differenced normalised differenced vegetation index (dNDVI)</p></li>
+<li><p>the differenced Bare Soil Index (dBSI).</p></li>
+</ul>
+<p>For the Random Forest Classifier, a 70%-30% split was used for the training and testing split.</p>
+<ul>
+<li><p>Number of trees: 500</p></li>
+<li><p>Number of predictor variables: the square root of the number of variables used in the model</p></li>
+</ul>
+<p>A systematic comparison of models with each of the candidate severity index and their combinations was involved. Training data for unburnt areas were only considered from 2-4 km of the areas affected by the fire. The accuracy of the classification is considered through the balanced accuracy, which is the average of sensitivity and specificity and the Kappa statistic. &nbsp;</p>
+<p>Interesting findings include</p>
+<ul>
+<li><p>High accuracy (mean balanced accuracy of 88%)</p>
+<ul>
+<li><p>Higher classification accuracy for unburnt and higher severity classes, low classification accuracy for lower severity classes (low and moderate)</p>
+<ul>
+<li><p>The difference in scale between training and resolution of the satellite imagery maybe reflected</p></li>
+<li><p>Moderate class – lowest representation of points, can increase the volume of training data and use a secondary classification approach</p></li>
+<li><p>Importance of interpreting the results with knowledge of local context&nbsp;</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>In the lecture, we were encouraged not to just present a study that classifies the imagery, but also think about how the data may be used. In this case, this classification may be useful for restoring the forests; at the national scale the Australian government has announced the initial investment of $50 million for long-term protection and restoration following the Australian bushfires between 2019 and 2020 [], and this classification may inform which areas require the most immediate intervention.</p>
 </section>
 <section id="reflection" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> Reflection</h2>
-</section>
-<section id="section" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="section"><span class="header-section-number">4.4</span> </h2>
+<p>In CASA0006, we also learnt about different machine learning methods, being introduced to the same algorithms. However, the application of these methods in Remote Sensing completely new, and it was interesting to see how it overlapped with what we have learnt in CASA0006 and also what is perhaps more specific to remote sensing (I don't think we covered weakest link pruning in CASA0006). I have decided to specifically focus on CART and Random Forest Classification for this learning diary, but if time permitted, I would have liked to explore the other methods in more detail as well, in terms of its content, application, and how it can be conducted in Google Earth Engine. I wonder how the results of the paper I introduced in the application section may differ if they tried using a different classification method. I</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-belgiu_random_2016" class="csl-entry" role="doc-biblioentry">
+Belgiu, Mariana, and Lucian Drăguţ. 2016. <span>“Random Forest in Remote Sensing: <span>A</span> Review of Applications and Future Directions.”</span> <em>ISPRS Journal of Photogrammetry and Remote Sensing</em> 114: 24–31.
+</div>
+<div id="ref-breiman_random_2001" class="csl-entry" role="doc-biblioentry">
+Breiman, Leo. 2001. <span>“Random Forests.”</span> <em>Machine Learning</em> 45: 5–32.
+</div>
+<div id="ref-chutia_hyperspectral_2016" class="csl-entry" role="doc-biblioentry">
+Chutia, Dibyajyoti, DK Bhattacharyya, Kandarpa Kumar Sarma, Ranjan Kalita, and Singuluri Sudhakar. 2016. <span>“Hyperspectral Remote Sensing Classifications: A Perspective Survey.”</span> <em>Transactions in GIS</em> 20 (4): 463–90.
+</div>
+<div id="ref-gibson2020" class="csl-entry" role="doc-biblioentry">
+Gibson, Rebecca, Tim Danaher, Warwick Hehir, and Luke Collins. 2020. <span>“A Remote Sensing Approach to Mapping Fire Severity in South-Eastern Australia Using Sentinel 2 and Random Forest.”</span> <em>Remote Sensing of Environment</em> 240: 111702. https://doi.org/<a href="https://doi.org/10.1016/j.rse.2020.111702">https://doi.org/10.1016/j.rse.2020.111702</a>.
+</div>
+<div id="ref-keeley2009" class="csl-entry" role="doc-biblioentry">
+Keeley, J. E. 2009. <span>“Fire Intensity, Fire Severity and Burn Severity: A Brief Review and Suggested Usage.”</span> <em>International Journal of Wildland Fire</em> 18 (1): 116–26. <a href="https://doi.org/10.1071/WF07049">https://doi.org/10.1071/WF07049</a>.
+</div>
+<div id="ref-mangale2020" class="csl-entry" role="doc-biblioentry">
+Mangale, Sanchita. 2020. <span>“Decision Tree-Pruning-Cost Complexity Method.”</span> <a href="https://sanchitamangale12.medium.com/decision-tree-pruning-cost-complexity-method-194666a5dd2f#:~:text=Weakest%20link%20pruning%20works%20by,in%20the%20number%20of%20leaves.">https://sanchitamangale12.medium.com/decision-tree-pruning-cost-complexity-method-194666a5dd2f#:~:text=Weakest%20link%20pruning%20works%20by,in%20the%20number%20of%20leaves.</a>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
