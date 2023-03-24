@@ -1,4 +1,4 @@
-# Week 8 {.unnumbered}
+# Week 8: Temperature {.unnumbered}
 
 ## Summary
 
@@ -82,7 +82,7 @@ Area of Interest: Arizona, U.S.A (state that Phoenix is capital of)
 
 ![MODIS Temperature Image](image/wk8_modis.png)
 
-![Time Series Analysis of MODIS Data ](image/wk8_time_series.png)
+![Time Series Analysis of MODIS Data](image/wk8_time_series.png)
 
 ## Application
 

@@ -1,4 +1,4 @@
-# Week 6 {.unnumbered}
+# Week 6: Classification I {.unnumbered}
 
 ## Summary
 

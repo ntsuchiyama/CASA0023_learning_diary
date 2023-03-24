@@ -1,4 +1,4 @@
-# Week 7 {.unnumbered}
+# Week 7: Classification II {.unnumbered}
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# Week 5 {.unnumbered}
+# Week 5: Google Earth Engine I {.unnumbered}
 
 ## Summary
 
@@ -20,7 +20,7 @@ In the practical, we saw the different types of data that could be used in Googl
 
 As a summary, here I provide a mind-map of the article by Gorelick *et al*. [-@gorelick_google_2017]. According to Google Scholar, this article has been cited in 6963 pieces of academic work, which I think demonstrates the strong influence of GEE in the field of Remote Sensing in terms of the changing the workflow.
 
-![Mind Map - Google Earth Engine](image/wk5_gee.jpg) 
+![Mind Map - Google Earth Engine](image/wk5_gee.jpg)
 
 ## Application
 
