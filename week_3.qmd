@@ -2,6 +2,26 @@
 
 ## Summary
 
+The following content was covered in week 3 in the lecture and the practical:
+
+-   Corrections -- the pre-processing of the raw remotely sensed data
+
+    -   Geometric
+
+    -   Atmospheric
+
+    -   Orthorectification / Topographic
+
+    -   Radiometric
+
+-   Data joining and enhancement
+
+    -   Feathering
+
+    -   Image enhancement
+
+Here I will focus on atmospheric correction -- it seems that this type of correction is the most common, as most of the results I saw with the Google search of "remote sensing corrections" seemed to deal with atmospheric correction. Below is a mind map of atmospheric correction, based on the lecture materials and the work by Jenks \[\]. It puts together the importance of applying the atmospheric correction, and the different methods which can be employed based on the condition of the image and the capability.
+
 ## Application
 
 ## Reflection

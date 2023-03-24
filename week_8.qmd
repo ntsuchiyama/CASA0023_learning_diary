@@ -1,10 +1,12 @@
 # Week 8
 
-## This week in the lecture, we went through two mainly two topics: 
+## Summary
 
--       Temperature and Policy
+This week in the lecture, we went through two mainly two topics: 
 
--       Extraction of Temperature from Satellite Data
+- Temperature and Policy
+
+- Extraction of Temperature from Satellite Data
 
 In the practical, in terms of the Google Earth Engine, we went through how data from Landsat and MODIS may be used for the extraction of temperature.
 
