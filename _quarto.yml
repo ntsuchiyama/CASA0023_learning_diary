@@ -5,7 +5,7 @@ project:
 book:
   title: "CASA0023 Learning Diary"
   author: "Nanami Tsuchiyama"
-  date: "26/01/2023"
+  date: "24/03/2023"
   chapters:
     - index.qmd
     - week_1.qmd
