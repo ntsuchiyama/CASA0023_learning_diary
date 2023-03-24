@@ -110,10 +110,7 @@ For the summary I will provide a description of the Random Forest classifier and
 
 Random Forest Classification of Hirakata, Osaka, Japan
 
-![Classification Output](image/wk6_practical.png)
-- Out of Bag Error Estimate: 0.45%
-- Training overall accuracy: 99.95%
-- Validation overall accuracy: 99.54%
+![Classification Output](image/wk6_practical.png) - Out of Bag Error Estimate: 0.45% - Training overall accuracy: 99.95% - Validation overall accuracy: 99.54%
 
 ## Application
 

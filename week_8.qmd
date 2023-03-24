@@ -62,7 +62,7 @@ What are there any policies addressing this issue?
 
     -   Does not consider specifics (how to use data, what planing rules need to be changed, what roles are required, interest in government etc)
 
--   Local policies -- case of Phoenix
+-   Local policies - case of Phoenix
 
     -   Phoenix climate action plan -- 2050 heat section goal [@phoenix2021]
 
@@ -73,6 +73,16 @@ What are there any policies addressing this issue?
         -   Implementation of Cool Pavement and Cool Corridors Programs
 
             -   **Should develop a better understanding of the specific locations for the implementation of green space and cooling?**
+
+### Selection of Practical Outputs
+
+Area of Interest: Arizona, U.S.A (state that Phoenix is capital of)
+
+![LANDSAT Temperature Image](image/wk8_landsat.png)
+
+![MODIS Temperature Image](image/wk8_modis.png)
+
+![Time Series Analysis of MODIS Data ](image/wk8_time_series.png)
 
 ## Application
 
@@ -86,7 +96,7 @@ The study demonstrates that the areas which went through the most change in land
 
 The study conducted by Zhang *et al.* [-@zhang_optimizing_2017] propose a framework for the identification of the optimal location and configuration of new green spaces based on the integration of GIS, remote sensing, spatial statistics and spatial optimisation, and is applied to Phoenix. Arizona. The remote sensing data used here is from ASTER, specifically the ASTER_08 product, which is generated from the five thermal infrared bands, containing the surface temperature at 90m spatial resolution. A consecutive day-night imagery (17 June 2010 22:00 and 18 June 2010 11:00) is considered, with the study area consisting of 11466 pixels. Additionally, a land cover classification based on the aerial imagery (four bands -- RGB and NIR, 1m spatial resolution) from the National Agricultural Imagery Program. The overall methodological framework is provided in the diagram below.
 
-![Framework [@zhang_optimizing_2017. p.166]](image/wk8_zhang.png)
+![Framework [@zhang_optimizing_2017, p.166]](image/wk8_zhang.png)
 
 ![Green Space Allocation Pattern with the Expected Temperature Drop [@zhang_optimizing_2017, p.169]](image/wk8_output.png)
 
