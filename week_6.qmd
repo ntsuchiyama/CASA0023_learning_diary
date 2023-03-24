@@ -68,7 +68,9 @@ For the summary I will provide a description of the Random Forest classifier and
 
             -   T -- tree complexity obesity (number of leaves in tree or subtree)
 
--   Random Forest Classification [@breiman_random_2001], @belgiu_random_2016\]
+![Examples of Regressions Trees - Source: [DataCamp](https://www.datacamp.com/tutorial/decision-trees-R)](image/wk6_cart.png)
+
+-   Random Forest Classification [@breiman_random_2001; @belgiu_random_2016]
 
     -   Involves many classification decision trees for making a prediction
 
@@ -84,7 +86,9 @@ For the summary I will provide a description of the Random Forest classifier and
 
     -   Usage of filter methods for feature selection based on importance
 
--   Comparison of Random Forest to other machine learning methods [@belgiu_random_2016], @chutia_hyperspectral_2016\]
+![Training and Testing Stages of Random Forest Classifier [@belgiu_random_2016, p.26]](image/wk6_rf.png)
+
+-   Comparison of Random Forest to other machine learning methods [@belgiu_random_2016; @chutia_hyperspectral_2016]
 
     -   Strengths
 
@@ -102,13 +106,20 @@ For the summary I will provide a description of the Random Forest classifier and
 
     -   Worse performance for object based image analysis compared to SVM
 
-### Practical Output 
+### Practical Output
 
 Random Forest Classification of Hirakata, Osaka, Japan
 
-## Application 
+![Classification Output](image/wk6_practical.png)
+- Out of Bag Error Estimate: 0.45%
+- Training overall accuracy: 99.95%
+- Validation overall accuracy: 99.54%
+
+## Application
 
 The case study I will like to consider here as an example of research using random forest classifier of remotely sensed data is the study by Gibson *et al.* [-@gibson2020]. The article is about fire severity which measure the loss of organic matter due to the fire [@keeley2009, p.118]. It is important to understand the spatial patterns of fire severity for fire management and ecological and climate change research related to fires. The objectives of the paper are stated as 1) the assessment of how useful high resolution Sentinel imagery is for mapping fire severity, 2) the evaluation of the classification for fire severity based on traditional spectral indices and fractional cover products, and 3) the identification of landscape factors that are related to misclassification (ibid.)
+
+![Location of fires studied in NSW, Australia [@gibson2020]](image/wk6_studyarea.png)
 
 The region of interest is New South Wales, and the focus is on eight wildfires (between 2017 and 2018, ranging from one day to two weeks) within the area. These sites were selected because there were high spatial resolution (less than 50cm) digital aerial photography with four bands (blue, green, red and NIR) for the post-fire period of them that overlapped with Sentinel 2 satellite imagery. These images went through aerial photograph interpretation for the generation of homogenous sample area polygons and classified based on five severity classes which have been used for the evaluation of the different degrees of post-fire change. Random sampling points are based on these polygons, being randomly distributed and reflecting the real-world situation. For the remotely sensed data, Sentinel 2 satellite imagery with cloud cover less than 5% and with dates near to the period when each of the fires occurred were chosen. Based on the calculation of the proportion of photosynthetic vegetation, non-photosynthetic vegetation, and bare ground cover using a fractional cover model (originally developed for Landsat imagery so need to apply surface reflectance adjustment beforehand) for each pixel, fractional cover products for each image are yielded. In addition, five candidate fire severity indices are calculated for each pre-and post- image pair (The formulas for acquiring these indices may referred to in the paper):
 
@@ -144,8 +155,10 @@ Interesting findings include
 
         -   Importance of interpreting the results with knowledge of local context 
 
-In the lecture, we were encouraged not to just present a study that classifies the imagery, but also think about how the data may be used. In this case, this classification may be useful for restoring the forests; at the national scale the Australian government has announced the initial investment of \$50 million for long-term protection and restoration following the Australian bushfires between 2019 and 2020 \[\], and this classification may inform which areas require the most immediate intervention.
+![Accuracy results [@gibson2020]](image/wk6_results.png)
+
+In the lecture, we were encouraged not to just present a study that classifies the imagery, but also think about how the data may be used. In this case, this classification may be useful for restoring the forests; at the national scale the Australian government has announced the initial investment of \$50 million for long-term protection and restoration following the Australian bushfires between 2019 and 2020 [@australiahighcommissionunitedkingdom], and this classification may inform which areas require the most immediate intervention.
 
 ## Reflection
 
-In CASA0006, we also learnt about different machine learning methods, being introduced to the same algorithms. However, the application of these methods in Remote Sensing completely new, and it was interesting to see how it overlapped with what we have learnt in CASA0006 and also what is perhaps more specific to remote sensing (I don\'t think we covered weakest link pruning in CASA0006). I have decided to specifically focus on CART and Random Forest Classification for this learning diary, but if time permitted, I would have liked to explore the other methods in more detail as well, in terms of its content, application, and how it can be conducted in Google Earth Engine. I wonder how the results of the paper I introduced in the application section may differ if they tried using a different classification method. I
+In CASA0006, we also learnt about different machine learning methods, being introduced to the same algorithms. However, the application of these methods in Remote Sensing completely new, and it was interesting to see how it overlapped with what we have learnt in CASA0006 and also what is perhaps more specific to remote sensing (I don't think we covered weakest link pruning in CASA0006). I have decided to specifically focus on CART and Random Forest Classification for this learning diary, but if time permitted, I would have liked to explore the other methods in more detail as well, in terms of its content, application, and how it can be conducted in Google Earth Engine. I wonder how the results of the paper I introduced in the application section may differ if they tried using a different classification method. I
